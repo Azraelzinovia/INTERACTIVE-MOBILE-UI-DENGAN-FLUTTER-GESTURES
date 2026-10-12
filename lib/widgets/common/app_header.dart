@@ -37,7 +37,11 @@ class AppHeader extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Row(
+                  FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: Alignment.centerLeft,
+                    child: Row(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       const Text(
                         'PANS ENERGI',
@@ -70,6 +74,7 @@ class AppHeader extends StatelessWidget {
                         ),
                       ),
                     ],
+                  ),
                   ),
                   const SizedBox(height: 2),
                   Text(
